@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Airbridge Lite Upload</title>
-    <link rel="stylesheet" href="style.css">
+<title>AirBridge Lite</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Upload Files</h1>
-    <input type="file" id="fileInput" multiple>
-    <button onclick="uploadFiles()">Upload</button>
-    <div id="progress"></div>
-    <script src="main.js"></script>
+
+<h2>AirBridge Lite — Drag & Drop Files</h2>
+
+<div id="dropzone">
+  <p>Drop files here or click to select</p>
+  <input type="file" id="fileInput" multiple>
+</div>
+
+<progress id="progress" max="100" value="0"></progress>
+<div id="status"></div>
+
+<script src="main.js"></script>
 </body>
 </html>
