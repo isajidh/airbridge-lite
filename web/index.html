@@ -1,22 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>AirBridge Lite</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AirBridge Lite</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<h2>AirBridge Lite </h2> 
-<h4>Drag & Drop Files</h4>
+    <div class="container">
 
-<div id="dropzone">
-  <p>Drop files here or click to select</p>
-  <input type="file" id="fileInput" multiple>
-</div>
+        <h1>AirBridge Lite</h1>
 
-<progress id="progress" max="100" value="0"></progress>
-<div id="status"></div>
+        <p class="subtitle">Fast Wi-Fi File Transfer</p>
 
-<script src="main.js"></script>
+        <div id="dropzone" class="dropzone">
+            <p>Drag & drop files here<br>or</p>
+            <label class="button">
+                Choose Files
+                <input type="file" id="fileInput" multiple />
+            </label>
+        </div>
+
+        <div id="progressContainer" class="progress-container hidden">
+            <div id="progressBar" class="progress-bar"></div>
+            <p id="progressText">0%</p>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+
 </body>
 </html>
